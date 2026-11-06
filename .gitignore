@@ -1,0 +1,9 @@
+.venv/
+fresh-arena/
+build/
+**/.cambc/
+**/compile_commands.json
+__pycache__/
+*.pyc
+.env
+.env.*

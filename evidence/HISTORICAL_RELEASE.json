@@ -1,0 +1,35 @@
+{
+  "kind": "sanitized_excerpt_of_historical_release_receipt_not_a_new_test",
+  "original_receipt_sha256": "31452c8214121416c093978f6f39a065f4d882b951b76658eb84ad2297e779e3",
+  "original_receipt_created_utc": "2026-10-23T20:56:57.310423+00:00",
+  "official_bundle": true,
+  "submission_zip_sha256": "73c7882e29a35d98ab0c1cfea3de7b4dd2f1682b2180c6f0b2c473e3b6c7c2dc",
+  "source_sha256": {
+    "combat.hpp": "8dfb2ad6673f949ddf028342796dc55e23935ce394b9c43d89caad4972b6495b",
+    "economy.hpp": "240ea87d71d0a16bb7cc4231ec8713bc5e8ce2c375f81b1404c8613dfd1005b9",
+    "main.cpp": "d8cb026a2a0628e6eb480b5c07a0b535ac50d3683b34e1f1cb1e416e60d6e217",
+    "navigation.hpp": "54dd0feff5c4923c5b47c02a769097adcda46befb635ba498560bfe6593f82e0",
+    "planner.hpp": "e89ed4f185440541c302d6c6a3f4977e6c0d6a776eb9412469c41353f1714faa",
+    "state.hpp": "29960e75156d8cc5a0948f65e46ccaa6f501eba2153a36850ad098c38fdf6a98"
+  },
+  "cli_sdk_version": "3.0.5",
+  "historical_test_engine_version": "1.0.3",
+  "historical_validation_stage": "full-v2",
+  "wasm_sha256": "af9d364b4f396837ddcfbfb1347cc91723f834dc37a54b5303f9a90bd7e367ec",
+  "fresh_build": {
+    "sha256": "af9d364b4f396837ddcfbfb1347cc91723f834dc37a54b5303f9a90bd7e367ec",
+    "matches_frozen_wasm": true,
+    "passed": true
+  },
+  "fresh_smoke": {
+    "completed": true,
+    "replay_verified": true,
+    "outcome": "teamA",
+    "candidate_faults": 0,
+    "candidate_logged_errors": 0,
+    "candidate_fuel_pauses": 0,
+    "candidate_max_no_progress": 15,
+    "candidate_max_stationary_without_objective_progress": 15
+  },
+  "note": "Only local absolute path fields were omitted. No historical match was rerun during this archive operation."
+}

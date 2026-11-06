@@ -1,0 +1,7 @@
+# Keep the frozen source and artifact bytes unchanged on checkout.
+arena/bots/estuary/src/** -text
+arena/cambc.toml -text
+artifacts/** -text
+*.md text eol=lf
+*.json text eol=lf
+SHA256SUMS text eol=lf

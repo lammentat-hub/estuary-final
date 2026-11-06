@@ -1,0 +1,88 @@
+{
+  "project": "Estuary",
+  "strategy_version": "v1",
+  "event": "Cambridge Battlecode 2026 Autumn",
+  "archive_date": "2026-11-06",
+  "original_release_created_utc": "2026-10-23T20:56:57.310423+00:00",
+  "original_release_manifest_sha256": "c388d4679f8b6dc343da909b4053d93c6ad1b9855c791363b023fa3f57382e59",
+  "original_provenance_sha256": "4a807450208aaf5ad5de212579012d7e3bfcf265886a9ae383882787eeb66c9a",
+  "source_files_unchanged": true,
+  "official_source_bundle_unchanged": true,
+  "archived_wasm_cli_sdk": "3.0.5",
+  "archived_wasm_historical_engine": "1.0.3",
+  "archived_wasm_sha256": "af9d364b4f396837ddcfbfb1347cc91723f834dc37a54b5303f9a90bd7e367ec",
+  "later_sdk4_formal_v1_wasm_included": false,
+  "archive_operation": {
+    "builds": 0,
+    "games": 0,
+    "fits": 0,
+    "strategy_changes": 0
+  },
+  "files": {
+    ".gitattributes": {
+      "bytes": 200,
+      "sha256": "3a05606f0a13b8c4d2d5c5800d04aab9d3cdd37ab4f8d42d31831db60726b61f"
+    },
+    ".gitignore": {
+      "bytes": 94,
+      "sha256": "5d3b9d502b29e536d44b13cb01e6855219627ef30d48c894761aca7c9bea8fbd"
+    },
+    "arena/bots/estuary/src/combat.hpp": {
+      "bytes": 4154,
+      "sha256": "8dfb2ad6673f949ddf028342796dc55e23935ce394b9c43d89caad4972b6495b"
+    },
+    "arena/bots/estuary/src/economy.hpp": {
+      "bytes": 7885,
+      "sha256": "240ea87d71d0a16bb7cc4231ec8713bc5e8ce2c375f81b1404c8613dfd1005b9"
+    },
+    "arena/bots/estuary/src/main.cpp": {
+      "bytes": 558,
+      "sha256": "d8cb026a2a0628e6eb480b5c07a0b535ac50d3683b34e1f1cb1e416e60d6e217"
+    },
+    "arena/bots/estuary/src/navigation.hpp": {
+      "bytes": 7601,
+      "sha256": "54dd0feff5c4923c5b47c02a769097adcda46befb635ba498560bfe6593f82e0"
+    },
+    "arena/bots/estuary/src/planner.hpp": {
+      "bytes": 11981,
+      "sha256": "e89ed4f185440541c302d6c6a3f4977e6c0d6a776eb9412469c41353f1714faa"
+    },
+    "arena/bots/estuary/src/state.hpp": {
+      "bytes": 5089,
+      "sha256": "29960e75156d8cc5a0948f65e46ccaa6f501eba2153a36850ad098c38fdf6a98"
+    },
+    "arena/cambc.toml": {
+      "bytes": 66,
+      "sha256": "599297df3a5140b01978e084af4d4759e3f6a7278f74c9e344a8a118bb63d7c1"
+    },
+    "artifacts/estuary-v1-sdk3.0.5.wasm": {
+      "bytes": 957327,
+      "sha256": "af9d364b4f396837ddcfbfb1347cc91723f834dc37a54b5303f9a90bd7e367ec"
+    },
+    "artifacts/estuary-v1-submission.zip": {
+      "bytes": 13526,
+      "sha256": "73c7882e29a35d98ab0c1cfea3de7b4dd2f1682b2180c6f0b2c473e3b6c7c2dc"
+    },
+    "BUILD.md": {
+      "bytes": 2325,
+      "sha256": "e3c312fbb2a4f824f6416971e58c486cf80b83df71b9000d3bb99c940fe68e74"
+    },
+    "docs/DESIGN_ZH.md": {
+      "bytes": 2831,
+      "sha256": "1fba07fb0fd78ffa36fead11306d6b2d5faea73db4aed520788f49c7015da1fe"
+    },
+    "evidence/HISTORICAL_RELEASE.json": {
+      "bytes": 1686,
+      "sha256": "9ac52f4bb5a1633b919d583fcd8c84c96242e4545b98b3cce7d14af1a2930e6c"
+    },
+    "PROVENANCE.md": {
+      "bytes": 1238,
+      "sha256": "38731467bfd6d0adc60f086b503a7f1d6db09c525334b70f602931277c14ac11"
+    },
+    "README.md": {
+      "bytes": 2450,
+      "sha256": "7482d24db6839a2b8397653489d8ff9f1b193c75618abaa29e9a7ebe35991736"
+    }
+  },
+  "manifest_self_hash": "Recorded in SHA256SUMS to avoid a circular hash."
+}
