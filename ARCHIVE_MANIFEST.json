@@ -80,8 +80,8 @@
       "sha256": "38731467bfd6d0adc60f086b503a7f1d6db09c525334b70f602931277c14ac11"
     },
     "README.md": {
-      "bytes": 2450,
-      "sha256": "7482d24db6839a2b8397653489d8ff9f1b193c75618abaa29e9a7ebe35991736"
+      "bytes": 3281,
+      "sha256": "46f1c0735b1a0ff8369d8ce16f8c2baf9387ec695e461dac0e9a08864695b180"
     }
   },
   "manifest_self_hash": "Recorded in SHA256SUMS to avoid a circular hash."

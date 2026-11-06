@@ -1,28 +1,28 @@
-# Estuary v1 · 最终归档
+# Estuary v1 · Final Archive
 
-Cambridge Battlecode 2026 Autumn 的独立 C++ 策略 bot。活动结束后，于 **2026-11-06** 将最终保留的 v1 源码和原始发布产物归档到本仓库。
+An independently implemented C++ bot for Cambridge Battlecode 2026 Autumn. After the event ended, the final retained v1 source code and original release artifacts were archived in this repository on **2026-11-06**.
 
-六份策略源码与 2026-10-23 最终发布记录、后续正式 v1 基线所用源码的 SHA-256 一致。本次归档没有修改策略、参数或首发顺序，也没有重新构建或运行比赛。
+All six strategy source files match the SHA-256 hashes recorded for the final release on 2026-10-23 and the source used by the subsequent formal v1 baseline. The archiving process did not change the strategy, parameters, or draft order, and did not rebuild the bot or run any matches.
 
-## 文件入口
+## Repository Contents
 
-| 文件 | 内容 |
+| File | Contents |
 | --- | --- |
-| [策略源码](arena/bots/estuary/src/) | 状态、导航、战斗、经济、任务调度和程序入口，共六份 C++ 文件 |
-| [官方格式源码包](artifacts/estuary-v1-submission.zip) | 原始 `cambc bundle` 产物，内含与源码目录完全一致的六份文件 |
-| [原始 WASM](artifacts/estuary-v1-sdk3.0.5.wasm) | 原发布版的本地执行产物，CLI/SDK 3.0.5，历史测试引擎 1.0.3 |
-| [构建说明](BUILD.md) | 使用固定版本官方工具创建新工程并重建 |
-| [策略说明](docs/DESIGN_ZH.md) | 实际策略结构与已知局限 |
-| [来源说明](PROVENANCE.md) | 独立实现范围及官方依赖边界 |
-| [历史发布证据摘要](evidence/HISTORICAL_RELEASE.json) | 从原始验收回执提取的版本、哈希与独立重建结果 |
-| [归档清单](ARCHIVE_MANIFEST.json) / [SHA-256 校验表](SHA256SUMS) | 仓库文件的大小与校验值 |
+| [Strategy source](arena/bots/estuary/src/) | Six C++ files covering state, navigation, combat, economy, task planning, and the program entry point |
+| [Official-format source bundle](artifacts/estuary-v1-submission.zip) | The original `cambc bundle` output, containing the same six files as the source directory, byte for byte |
+| [Original WASM](artifacts/estuary-v1-sdk3.0.5.wasm) | The original release's local executable, built with CLI/SDK 3.0.5 and historically tested with engine 1.0.3 |
+| [Build instructions](BUILD.md) (Chinese) | How to create a fresh project and rebuild using the pinned official tools |
+| [Strategy design](docs/DESIGN_ZH.md) (Chinese) | The implemented strategy structure and its known limitations |
+| [Provenance](PROVENANCE.md) (Chinese) | The scope of the independent implementation and its official dependencies |
+| [Historical release evidence](evidence/HISTORICAL_RELEASE.json) | Versions, hashes, and independent rebuild results extracted from the original release verification record |
+| [Archive manifest](ARCHIVE_MANIFEST.json) / [SHA-256 checksums](SHA256SUMS) | File sizes and checksums for the archived repository contents |
 
-## 版本与验证范围
+## Versions and Verification Scope
 
-这里的 v1 指冻结的策略源码版本，不代表最新 SDK。附带 WASM 是原始 CLI/SDK **3.0.5** 发布产物；它与后来用 CLI/SDK 4.0.0 构建的正式 v1 基线 WASM 是不同文件。本仓库没有把二者混用或声明字节相同。
+Here, v1 identifies the frozen strategy source version, not the latest SDK. The included WASM is the original release artifact built with CLI/SDK **3.0.5**. It is a different file from the later formal v1 baseline WASM built with CLI/SDK 4.0.0; the two artifacts are kept distinct and are not claimed to be byte-identical.
 
-原始发布回执记载：源码包曾在全新官方工程中重建，得到与原发布 WASM 相同的 SHA-256，并完成一次独立完整对局核验。这些是 **2026-10-23 的历史记录**，不是此次归档重新执行的检查。此次实际核验包括六份源码哈希、ZIP CRC、包内源码逐字节一致及原始 WASM 哈希。这里不对当前版本服务器兼容性或赛事排名作新结论。
+The original release record states that the source bundle was rebuilt in a fresh official project, producing the same SHA-256 hash as the original release WASM, and that one independent full-match verification was completed. These are **historical records from 2026-10-23**, not checks rerun during this archival work. The archive verification checked all six source hashes, ZIP CRCs, byte-for-byte agreement between the bundled and unpacked source files, and the original WASM hash. It makes no new claims about compatibility with the current server version or tournament rankings.
 
-策略以清营、购买、携带并献祭宝石为主循环，使用合法视野、地图信息和 8 字节共享任务认领。具体实现和局限见设计说明。
+The strategy's main loop is to clear camps, make purchases, transport gems, and sacrifice them at altars. It uses legally available vision and map information, with task claims stored in 8 bytes of shared memory. See the design document for implementation details and limitations.
 
-SDK、地图、编译工具链、第三方对手、研究回放、训练数据、凭据和机器本地控制文件不随此仓库分发。依赖通过官方工具另行取得。本仓库没有新增开源许可条款。
+The SDK, maps, compiler toolchain, third-party opponents, research replays, training data, credentials, and machine-local control files are not distributed with this repository. Dependencies are obtained separately through the official tools. This archive does not add an open-source license.
